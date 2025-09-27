@@ -6,7 +6,7 @@ function InvoicePreview() {
   const total = state.items.reduce((acc, item) => acc + item.qty * item.rate, 0);
 
   // Add empty rows to make table at least 12 rows
-  const totalRows = 12;
+  const totalRows = 8;
   const emptyRows = totalRows - state.items.length > 0 ? totalRows - state.items.length : 0;
 
   return (
